@@ -1,5 +1,16 @@
+
 .App {
   text-align: center;
+  max-width: 400px;
+  margin: auto;
+  border-radius: 8px;
+  max-height: 800px;
+  height: 100vh;
+  margin-top: 100px;
+  background: aliceblue;
+  box-shadow: 0px 0px 10px 0px #2222225c;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -9,13 +20,14 @@
 
 .App-header {
   background-color: #222;
-  height: 150px;
-  padding: 20px;
   color: white;
+    padding: 20px;
+    border-radius: 8px 8px 0px 0px;
 }
 
 .App-title {
   font-size: 1.5em;
+  margin: 0;
 }
 
 .App-intro {
@@ -25,4 +37,91 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+
+.Todo-input-container{
+
+  display: flex;
+  padding: 5px;
+  background: #222222;
+}
+
+.Todo-input-input{
+  flex: 8 1;
+  height: 36px;
+  border: none;
+  border-radius: 8px 0px 0px 8px;
+  padding-left: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #9f9f9f;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #9f9f9f;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #9f9f9f;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #9f9f9f;
+}
+
+*:focus {
+  outline: none;
+}
+
+.Todo-list-done{
+  min-height: 60px;
+  padding: 4px;
+  background: #ebebeb;
+  border-radius: 0px 0px 8px 8px;
+}
+.Todo-list-undone {
+  background: #d4d2d2;
+  padding: 5px;
+  padding-bottom: 20px;
+  flex: 1;
+}
+
+.Todo-input-btn{
+  flex: 2;
+    border: 0;
+    background: #FFEB3B;
+    border-radius: 0px 8px 8px 0px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Todo-element-container{
+  display: flex;
+  justify-content: space-between;
+  background: #fcfcfc;
+  border-radius: 0px 8px 8px 0px;
+  border-radius: 8px;
+  margin: 2px;
+}
+
+.Todo-element-undone{
+ 
+}
+
+.Todo-element-check{
+  width: 50px;
+  background: cadetblue;
+  border-radius: 50%;
+  color: #fff;
+  width: 50px;
+    background: cadetblue;
+    color: #fff;
+    border-radius: 0px 8px 8px 0px;
+}
+
+.Todo-element-text{
+  padding-left: 20px;
 }
